@@ -1,0 +1,515 @@
+body {
+  font-family: "Montserrat", "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+#topbar {
+  height: 40px;
+  background-color: #df92b2;
+  line-height: 40px;
+  font-size: 12px;
+}
+
+#topbar .list-separator {
+  font-weight: 300;
+  color: #fff;
+  margin: 0 5px;
+}
+
+.topbar__hot-deal {
+  color: #fff;
+}
+
+.topbar__hot-deal:hover {
+  color: #fff;
+}
+
+.topbar__hot-deal span {
+  background-color: #9f3863;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+.topbar__social-link {
+  margin-bottom: 0;
+}
+
+.topbar__social-link li {
+  display: inline-block;
+}
+
+.topbar__social-link li a {
+  color: #fff;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+/* CSS untuk Header*/
+
+#header .container {
+  padding: 15px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+#header .row {
+  align-items: center;
+}
+
+#header .list-separator {
+  color: #afafaf;
+  font-weight: 300;
+}
+
+.header__search-box {
+  height: 30px;
+  font-size: 12px;
+}
+
+.header__category {
+  margin-right: 10px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  padding: 0 20px;
+  outline: none;
+  color: #787878;
+}
+
+.header__search-box input.header_search-input {
+  font-size: 12px;
+  border-top-left-radius: 25px !important;
+  border-bottom-left-radius: 25px !important;
+  border-right: 0;
+  margin-right: -1px;
+}
+
+.header__search-box input.header_search-input:focus {
+  border-color: #ddd;
+}
+
+.header__search-btn {
+  font-size: 12px;
+  display: inline-block;
+  background-color: transparent;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-left: 0;
+  padding: 0 10px;
+  line-height: 28px;
+}
+
+.header__menu {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.header__menu li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.header__menu li a {
+  color: #787878;
+}
+
+.header__menu li a i.far i.fas {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.header__cart-price {
+  color: #787878;
+  font-weight: 500;
+}
+
+/*CSS untuk MAIN MENU*/
+
+#mainMenu .nav-link {
+  font-size: 14px;
+  margin-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*CSS untuk HERO AREA*/
+
+#hero {
+  position: relative;
+}
+
+#hero-nav {
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+#hero-nav button {
+  position: absolute;
+  background-color: #df92b2;
+  outline: none;
+  border-radius: 100%;
+  padding: 5px 15px;
+  display: inline-block;
+  font-size: 24px;
+  color: #fff;
+}
+
+#hero-nav button:hover {
+  background-color: #df6a9a;
+  cursor: pointer;
+}
+
+#hero-nav button.owl-prev {
+  left: 100px;
+}
+
+#hero-nav button.owl-next {
+  right: 100px;
+}
+
+.hero-slider .owl-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-slider .owl-dot {
+  outline: none;
+}
+
+.hero-slider .owl-dot span {
+  background-color: transparent !important;
+  border: 1px solid #fff;
+  width: 11px !important;
+  height: 11px !important;
+}
+
+.hero-slider .owl-dot.active span {
+  background-color: #fff !important;
+}
+
+.hero-slider .owl-dot:hover span {
+  background-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.hero-slider__item img {
+  width: 100%;
+  height: calc(100vh - 150px);
+  /*height: 580px;*/
+  background-position: center -50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*CCS untuk MOBILE*/
+
+@media screen and (max-width: 768px) {
+  #topbar {
+    height: unset;
+    text-align: center;
+  }
+
+  #topbar .float-left,
+  #topbar .float-right {
+    float: none !important;
+  }
+
+  #brand img {
+    /*text-align: center;
+    margin: auto;*/
+    position: relative;
+    left: 10%;
+    transform: translateX(-50px);
+    margin: 15px 0;
+  }
+
+  #header .header__form {
+    margin: 25px 20px;
+  }
+
+  #header .header__menu {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}
+
+/*hero area*/
+
+#hero-nav button.owl-prev {
+  left: 20px;
+}
+
+#hero-nav button.owl-next {
+  right: 20px;
+}
+
+/*CSS untuk mobile dibawah 991px */
+
+#mainMenu .dropdown-item:active,
+#mainMenu .dropdown-item:focus {
+  background-color: #df92b2;
+}
+
+@media screen and (max-width: 992px) {
+  #header .container {
+    border-bottom: 0;
+  }
+
+  #navigation button.navbar-toggler {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #df92b2;
+    border: none;
+    color: #fff;
+    outline: none;
+    padding: 15px 20px;
+  }
+
+  #mainMenu {
+    /*width: 200px;
+    position: absolute;
+    top: 60px;
+    left: 30%;
+    transform: translateX(-30%);*/
+    width: 60%;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    background-color: #fff;
+    padding: 10px 30px;
+  }
+
+  #mainMenu .dropdown-menu {
+    border: none;
+    padding: 0;
+    border-left: 1px solid #ddd;
+  }
+
+  #mainMenu .dropdown-item {
+    font-size: 12px;
+  }
+
+  #mainMenu .dropdown-item:active {
+    color: #fff;
+  }
+
+  #mainMenu .dropdown-item:active,
+  #mainMenu .dropdown-item:focus {
+    background-color: #df92b2;
+  }
+
+  /*hero area*/
+
+  .hero-slider__item img {
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+/*css untuksection Beranda*/
+
+#Beranda {
+  margin-top: 50px;
+}
+
+#Beranda h2 {
+  color: #df92b2;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+#Beranda .img-toko img {
+  height: 65vh;
+  width: 100%;
+}
+
+#Beranda p {
+  font-size: 18px;
+  font-family: Raleway, sans-serif;
+  font-size: 500;
+  line-height: 28px;
+  text-align: justify;
+}
+
+.btn.btn-utama {
+  background-color: #df92b2;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn.btn-utama:hover {
+  background-color: #df92b2;
+}
+
+/* CSS untuk produk*/
+#produk {
+  margin-top: 50px;
+}
+
+#produk .card {
+  margin-top: 25px;
+}
+
+#produk h2 {
+  color: #df6a9a;
+  font-weight: 700;
+  border-bottom: 2px solid #9f3863;
+}
+
+/*css untuk Kategori*/
+
+#Kategori h2 {
+  color: #df6a9a;
+  font-weight: 700;
+  border-bottom: 2px solid #9f3863;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#Kategori .bg-card {
+  background-color: #df92b2;
+}
+
+.kategori {
+  color: #000;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid #9f3863;
+  padding: 8px;
+  cursor: pointer;
+}
+
+/*CSS untuk Diskon*/
+
+/*CSS untuk Kontak*/
+
+.Kontak h2 {
+  color: #df6a9a;
+  font-weight: 700;
+  border-bottom: 2px solid #9f3863;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/*CSS untuk Login*/
+.Container {
+  max-width: 400px;
+  padding: 0 20px;
+  margin: 100px auto;
+}
+
+.wrapper {
+  width: 100%;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .title {
+  height: 90px;
+  background: #df92b2;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper form {
+  padding: 30px 25px 25px 25px;
+}
+
+.wrapper form .row {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.wrapper form .row i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #df92b2;
+}
+
+.wrapper form .row input {
+  height: 40px;
+  width: 100%;
+  padding-left: 40px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+}
+
+.wrapper form .row input:focus {
+  border-color: #df92b2;
+  box-shadow: inset 0px 0px 2px 2px rgba(227, 126, 178, 0.4);
+  outline: none;
+}
+
+.wrapper form .pass {
+  text-align: right;
+  margin: -10px 0 20px 0;
+}
+
+.wrapper form .pass a {
+  color: #df92b2;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.wrapper form .pass a:hover {
+  text-decoration: underline;
+}
+
+.wrapper form .button input {
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  background: #df92b2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.wrapper form .button input:hover {
+  background: #df6a9a;
+}
+
+.wrapper form .signup-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.wrapper form .signup-link a {
+  color: #df92b2;
+  text-decoration: none;
+}
+
+.wrapper form .signup-link a:hover {
+  text-decoration: underline;
+}
